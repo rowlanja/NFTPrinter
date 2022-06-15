@@ -18,8 +18,11 @@ def offsetTransformation(colors, mintCount):
     transformations = []
     for mint in range(mintCount):
         map = dict()
-        newR, newG, newB = random.sample(range(1, 255), 3)
+        newR, newG, newB = random.sample(range(1, 20), 3)
         for color in colors:
+            if color == (255,255,255) :
+                print('white')
+                continue
             r = color[0] + newR
             g = color[1] + newG
             b = color[2] + newB
@@ -91,25 +94,18 @@ def paletteTransformation():
     return transformation
 
 
-def shiftTransformation(colors, filename):
-    fileObject = open(filename, "r")
-    jsonContent = fileObject.read()
-    palette = json.loads(jsonContent)
-    transformations = list()
-    for before, after in palette.items():
-        print(before)
-        print(after)
-        for t in after:
-            d = dict()
-            b = tuple(map(int, str(before).split(',')))
-            tx = tuple(map(int, t.split(',')))
-            rDiff = tx[0] - b[0]
-            gDiff = tx[1] - b[1]
-            bDiff = tx[2] - b[2]
-            for color in colors:
-                newR = color[0] + rDiff
-                newG = color[1] + gDiff
-                newB = color[2] + bDiff
-                d[color] = (newR,newG,newB)
-            transformations.append(d)
+def shiftTransformation(colors):
+    for color in colors:
+        d = dict()
+        b = tuple(map(int, str(before).split(',')))
+        tx = tuple(map(int, t.split(',')))
+        rDiff = tx[0] - b[0]
+        gDiff = tx[1] - b[1]
+        bDiff = tx[2] - b[2]
+        for color in colors:
+            newR = color[0] + rDiff
+            newG = color[1] + gDiff
+            newB = color[2] + bDiff
+            d[color] = (newR,newG,newB)
+        transformations.append(d)
         return transformations
