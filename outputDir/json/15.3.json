@@ -2,7 +2,7 @@
     "name": "15",
     "symbol": "NJA",
     "description": "Official Ninja",
-    "image": "ipfs://QmQwG6MFz8rSqjXnGJ8cHYtviHQcZ78Td2SdpB7SEbrAkV/15.png",
+    "image": "ipfs://QmVXVMJgyfAkErneZGnDUqzC6hGFctXJVrRETyaqRc3LUK/15.png",
     "edition": 1,
     "date": 1632433142769,
     "attributes": [
@@ -16,19 +16,15 @@
         },
         {
             "trait_type": "strength",
-            "value": "666"
+            "value": "24"
         },
         {
             "trait_type": "defense",
-            "value": "101010"
-        },
-        {
-            "trait_type": "attack",
-            "value": "444"
+            "value": "15"
         },
         {
             "trait_type": "luck",
-            "value": "888"
+            "value": "0"
         }
     ],
     "collection": {

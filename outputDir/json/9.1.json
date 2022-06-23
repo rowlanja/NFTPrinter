@@ -2,7 +2,7 @@
     "name": "9",
     "symbol": "NJA",
     "description": "Official Ninja",
-    "image": "ipfs://QmQwG6MFz8rSqjXnGJ8cHYtviHQcZ78Td2SdpB7SEbrAkV/9.png",
+    "image": "ipfs://QmVXVMJgyfAkErneZGnDUqzC6hGFctXJVrRETyaqRc3LUK/9.png",
     "edition": 1,
     "date": 1632433142769,
     "attributes": [
@@ -20,15 +20,11 @@
         },
         {
             "trait_type": "defense",
-            "value": "10"
-        },
-        {
-            "trait_type": "attack",
-            "value": "4"
+            "value": "0"
         },
         {
             "trait_type": "luck",
-            "value": "2"
+            "value": "5"
         }
     ],
     "collection": {
